@@ -225,45 +225,66 @@ for(i=0;i<words.length;i++)
 console.log(string)
 
 //31
-const numbers1 = [5,8,12,20,3]
+const numberss = [5,8,12,20,3]
 
-sum = 0;
- i=0;
-while(sum<25)
-{
-sum = sum+numbers1[i]
-i++
-}
-console.log("summation is ",sum)
+// sum = 0;
+//  i=0;
+// while(sum<25)
+// {
+// sum = sum+numbers1[i]
+// i++
+// }
+// console.log("summation is ",sum)
 
 
-//32 
-sum=0;
-for(const number of numbers)
-{
-    sum = number +sum
-}
-console.log("summation is ",sum);
+// //32 
+// sum=0;
+// for(const number of numbers)
+// {
+//     sum = number +sum
+// }
+// console.log("summation is ",sum);
 
-//33
-const temp = [15,22,19,30,28,18,25 ]
-let hogtemp =temp[0] 
+// //33
+// const temp = [15,22,19,30,28,18,25 ]
+// let hogtemp =temp[0] 
 
-    for(i = 0 ; i<temp.length; i++)
-    {
-if(hogtemp < temp[i])
-{
-    hogtemp = temp[i];
+//     for(i = 0 ; i<temp.length; i++)
+//     {
+// if(hogtemp < temp[i])
+// {
+//     hogtemp = temp[i];
     
-}
-    }
-    console.log("Heightest temp is ",hogtemp)
-   // console.log("  ",words[0].length, "characters in ",words[0])
-let countWord 
-    for(i=0;i<words.length;i++)
+// }
+//     }
+//     console.log("Heightest temp is ",hogtemp)
+//    // console.log("  ",words[0].length, "characters in ",words[0])
+
+// //34
+//    let countWord 
+//     for(i=0;i<words.length;i++)
+//     {
+//         if(words[i].length>5)
+//         {
+//            console.log( words[i] , "has ",words[i].length,"characters");
+//         }
+//     }
+
+
+   //35
+   i =0;
+   
+   while(i<numbers.length)
     {
-        if(words[i].length>5)
-        {
-           console.log( words[i] , "has ",words[i].length,"characters");
-        }
-    }
+if(numbers[i]%2!==0)
+{
+console.log("first odd number is ",numbers[i])
+break;
+}
+i++;
+    } 
+
+let FON = numbers.find(num=>num%2!==0)
+console.log("first odd number ",FON)
+
+
